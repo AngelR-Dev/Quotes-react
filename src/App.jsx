@@ -20,12 +20,11 @@ function App() {
     }
   };
 
-  function updateColor () {
-    return (likes ? ({color: '#ff0000'}) : {color: '#808080'})
+  function updateColor() {
+    return likes ? { color: "#ff0000" } : { color: "#808080" };
   }
 
-  const heartColor = updateColor().color
-
+  const heartColor = updateColor().color;
 
   // Esta funcion calcula un indice random
   const getIndexRandom = (arr) => Math.floor(Math.random() * arr.length);
@@ -36,7 +35,6 @@ function App() {
 
   const [randomQuote, setRandomQuote] = useState(firstQuotes);
   const [randomColor, setRandomColor] = useState(firstColor);
-
 
   const backgroundObject = {
     backgroundColor: randomColor,
@@ -56,7 +54,12 @@ function App() {
         randomColor={randomColor}
         getRandomAll={getRandomAll}
       />
-      <LikeCount likes={likes} setLikeActive={setLikeActive} likeF={likeF} heartColor={heartColor} />
+      <LikeCount
+        likes={likes}
+        setLikeActive={setLikeActive}
+        likeF={likeF}
+        heartColor={heartColor}
+      />
     </div>
   );
 }

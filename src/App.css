@@ -28,6 +28,11 @@ p,h1 {
   font-size: 18px;
 }
 
+.icon__quote {
+  font-size: 3rem;
+  padding: 0 10px;
+}
+
 .card__author {
   margin-left: auto;
   width: max-content;
@@ -81,6 +86,7 @@ p,h1 {
   font-size: 3rem;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .heartGrey {
